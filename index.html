@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" class="form-control" readonly>
+            <div class="calculator-buttons">
+                <button class="btn btn-primary" onclick="clearDisplay()">AC</button>
+                <button class="btn btn-primary" onclick="deleteLast()">DEL</button>
+                <button class="btn btn-primary" onclick="appendOperator('%')">%</button>
+                <button class="btn btn-primary" onclick="appendOperator('/')">/</button>
+                
+                <button class="btn btn-light" onclick="appendNumber('7')">7</button>
+                <button class="btn btn-light" onclick="appendNumber('8')">8</button>
+                <button class="btn btn-light" onclick="appendNumber('9')">9</button>
+                <button class="btn btn-primary" onclick="appendOperator('*')">*</button>
+                
+                <button class="btn btn-light" onclick="appendNumber('4')">4</button>
+                <button class="btn btn-light" onclick="appendNumber('5')">5</button>
+                <button class="btn btn-light" onclick="appendNumber('6')">6</button>
+                <button class="btn btn-primary" onclick="appendOperator('-')">-</button>
+                
+                <button class="btn btn-light" onclick="appendNumber('1')">1</button>
+                <button class="btn btn-light" onclick="appendNumber('2')">2</button>
+                <button class="btn btn-light" onclick="appendNumber('3')">3</button>
+                <button class="btn btn-primary" onclick="appendOperator('+')">+</button>
+                
+                <button class="btn btn-light" onclick="appendNumber('0')">0</button>
+                <button class="btn btn-light" onclick="appendDot()">.</button>
+                <button class="btn btn-light" onclick="square()">x²</button>
+                <button class="btn btn-success" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
